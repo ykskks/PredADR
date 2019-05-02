@@ -39,8 +39,8 @@ a:hover {
 
 @media screen and (min-width: 768px) {
     .container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -63,7 +63,7 @@ a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline;
     margin-right: 40px;
-    margin-left: 60px;
+    margin-left: 40px;
     padding-top: 12px;
 }
 
