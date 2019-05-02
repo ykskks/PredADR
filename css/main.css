@@ -44,38 +44,101 @@ a:hover {
     }
 }
 
-/* ========== header ========== */
-header {
-    min-width: 1000px;
+.required {
+    padding: 0.5em;
+    font-size: 0.75em;
+    color: red;
 }
 
+/* ========== header ========== */
 .header-container {
     background: #b3cccc;
     display: flex;
-    width: 2000px;
+    width: auto;
+    height: 60px;
     margin: 0 auto;
 }
 
 .header-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline;
-    margin-right: 30px;
-    margin-left: 20px;
+    margin-right: 40px;
+    margin-left: 60px;
+    padding-top: 12px;
 }
 
 .navbar {
     list-style-type: none;
     height: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 
-
 .navbar li {
-    display: inline-block;
-    padding: 10px 20px;
+    display: inline;
+    margin: 18px 20px;
+
 }
 
 .navbar a {
     display: block;
     text-align: center;
+}
+
+/* ========== keyvisual ========== */
+.img-home {
+    opacity: 0.6;
+    height: 400px;
+}
+
+
+/* ========== main section ========== */
+.main {
+    padding: 15px 10px 30px 10px;
+}
+
+.main-container p {
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+.main-container ul {
+    padding: 10px 30px;
+}
+
+.main-container .main-description {
+    font-size: 30px;
+    margin-top:0;
+    padding: 10px
+}
+
+input[type="text"] {
+    width: 30%;
+}
+
+input[type="submit"] {
+    width: 5%;
+}
+
+.example {
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.question {
+    color: green;
+    text-decoration: underline;
+}
+
+/* ========== footer ========== */
+footer {
+    background: #b3cccc;
+    text-align: right;
+    height: 2em;
+}
+
+.footer-container {
+    padding-top:4px;
 }
 
 

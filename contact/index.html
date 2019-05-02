@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A web UI for PredADR">
+    <title>PredADR</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1 class="header-title">PredADR</h1>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../predict/index.html">Predict</a></li>
+                    <li><a href="../faq/index.html">FAQ</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container main-container">
+            <main>
+                <p>If you have any questions, feel free to reach out to us!</p>
+                <form action="#" method="POST">
+                    <p><label>Name<span class="required">*required</span><br>
+                    <input type="text" name="name" id='name-field' required></label></p>
+                    <p><label>Email adress<span class="required">*required</span><br>
+                    <input type="email" name="email" id='email-field' required></label></p>
+                    <p><label>Comment<span class="required">*required</span><br>
+                    <textarea type="text" name="comment" id='comment-field' required></textarea></label></p>
+                    <input type="submit" name="submit" value="submit">
+                </form>
+                
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            Copyright &copy; 2019 ykskks
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+
+</body>
+</html>
