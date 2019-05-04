@@ -112,8 +112,8 @@ a:hover {
     padding: 10px
 }
 
-input[type="text"] {
-    width: 30%;
+input, textarea {
+    width: 20%;
 }
 
 input[type="submit"] {
