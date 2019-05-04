@@ -118,6 +118,7 @@ input, textarea {
 
 input[type="submit"] {
     width: 5%;
+    margin-top: 20px;
 }
 
 .example {
