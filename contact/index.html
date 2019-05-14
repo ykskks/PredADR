@@ -27,7 +27,7 @@
         <div class="container main-container">
             <main>
                 <p>If you have any questions, feel free to reach out to us!</p>
-                <form action="#" method="POST">
+                <form action="#" id="form" method="POST">
                     <p><label>Name<span class="required">*required</span><br>
                     <input type="text" name="name" id='name-field' required></label></p>
                     <p><label>Email adress<span class="required">*required</span><br>
@@ -36,6 +36,7 @@
                     <textarea type="text" name="comment" id='comment-field' required></textarea></label></p>
                     <input type="submit" name="submit" value="submit">
                 </form>
+                <p id="message"></p>
                 
             </main>
         </div>
@@ -47,7 +48,14 @@
         </div>
     </footer>
 
-    <script src="../script/script.js"></script>
+    <script>
+    document.getElementById("form").onsubmit = function() {
+        var name = document.getElementById("form").name.value;
+        var email = document.getElementById("form").email.value;
+        document.getElementById("message").textContent = "we will contact you soon, " + name + "<" + email + ">!";
+        return false;
+    };
+    </script>
 
 </body>
 </html>

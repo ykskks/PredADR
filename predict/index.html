@@ -26,13 +26,13 @@
     <section class="main">
         <div class="container main-container">
             <main>
-                <form action="#" method="POST">
+                <form action="#" id="form" method="POST">
                     <p>Input the smiles string of the molecule.<span class="required">*required</span></p>
                     <span class="example">Example: CC(=O)NCCC1=CNc2c1cc(OC)cc2</p>
-                    <input type="text" name="name" id="name-field" required><br>
+                    <input type="text" name="smiles" id="smiles-field" required><br>
                     <input type="submit" name="submit" value="submit">
                 </form>
-                
+                <p id="message"></p>
             </main>
         </div>
     </section>
@@ -43,7 +43,13 @@
         </div>
     </footer>
 
-    <script src="../script/script.js"></script>
+    <script>
+    document.getElementById("form").onsubmit = function() {
+        var molecule = document.getElementById("form").smiles.value;
+        document.getElementById("message").textContent = "Wait a minute. Predicting for " + molecule +".";
+        return false 
+    };
+    </script>
 
 </body>
 </html>
